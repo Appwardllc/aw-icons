@@ -1,0 +1,194 @@
+:root {
+  --aw-font-size: 7rem;
+}
+
+.demo-icon {
+  font-size: var(--aw-font-size);
+}
+
+@font-face {
+  font-family: 'appward';
+  src: url('../font/appward.eot?36492724');
+  src: url('../font/appward.eot?36492724#iefix') format('embedded-opentype'),
+       url('../font/appward.woff2?36492724') format('woff2'),
+       url('../font/appward.woff?36492724') format('woff'),
+       url('../font/appward.ttf?36492724') format('truetype'),
+       url('../font/appward.svg?36492724#appward') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'appward';
+    src: url('../font/appward.svg?36492724#appward') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "appward";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-actions:before { content: '\e800'; } /* '' */
+
+
+
+.icon-actions:before { content: '\e800'; }
+
+
+.bg-marketing:before {
+  background-color: #00B5AD;
+}
+.bg-sales:before {
+  background-color:red;
+}
+
+.icon-actions-bg:before {
+  content: '\e800';
+  position: relative;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  position: relative;
+  } /* '' */
+
+/*
+.product-square:before {
+  	z-index: -1;
+  	position: relative;
+  	content: "";
+  	display: block;
+  	width: calc(var(--aw-font-size) - 0.3rem);
+  	height: calc(var(--aw-font-size) - 0.3rem);
+    top: calc(var(--aw-font-size) - 1rem);
+  	left: calc(var(--aw-font-size) + 1rem);
+    margin-left:calc(var(--aw-font-size) - 5rem);
+  	border-radius: calc(var(--aw-font-size) - 2rem);
+   	background-color: #222;
+    scale: 3;
+	  transform: rotate(-20deg);
+}
+*/
+
+.product-square:before {
+    content: "";
+    z-index: -1;
+    position: relative;
+    content: "";
+    display: block;
+    width: calc(var(--aw-font-size) - 0.3rem);
+    height: calc(var(--aw-font-size) - 0.3rem);
+    top: calc(var(--aw-font-size) - 1rem);
+    left: calc(var(--aw-font-size) + 1rem);
+    margin-left:calc(var(--aw-font-size) - 5rem);
+    border-radius: calc(var(--aw-font-size) - 2rem);
+}
+
+.bg-before-black:before {
+  background-color: #000;
+}
+
+
+.icon-announcements:before { content: '\e801'; } /* '' */
+.icon-app-creator:before { content: '\e802'; } /* '' */
+.icon-appointments:before { content: '\e803'; } /* '' */
+.icon-articles:before { content: '\e804'; } /* '' */
+.icon-assets:before { content: '\e805'; } /* '' */
+.icon-audits:before { content: '\e806'; } /* '' */
+.icon-boards:before { content: '\e807'; } /* '' */
+.icon-brush:before { content: '\e808'; } /* '' */
+.icon-calendar:before { content: '\e809'; } /* '' */
+.icon-calls:before { content: '\e80a'; } /* '' */
+.icon-changes:before { content: '\e80b'; } /* '' */
+.icon-chat:before { content: '\e80c'; } /* '' */
+.icon-checklist-creator:before { content: '\e80d'; } /* '' */
+.icon-companies:before { content: '\e80e'; } /* '' */
+.icon-contacts:before { content: '\e80f'; } /* '' */
+.icon-database_manager:before { content: '\e810'; } /* '' */
+.icon-deals:before { content: '\e811'; } /* '' */
+.icon-discussions:before { content: '\e812'; } /* '' */
+.icon-documents:before { content: '\e813'; } /* '' */
+.icon-drawings:before { content: '\e814'; } /* '' */
+.icon-employees:before { content: '\e815'; } /* '' */
+.icon-expense-reports:before { content: '\e816'; } /* '' */
+.icon-faq:before { content: '\e817'; } /* '' */
+.icon-goals:before { content: '\e818'; } /* '' */
+.icon-insights:before { content: '\e819'; } /* '' */
+.icon-inspections:before { content: '\e81a'; } /* '' */
+.icon-installations:before { content: '\e81b'; } /* '' */
+.icon-inventory:before { content: '\e81c'; } /* '' */
+.icon-mail:before { content: '\e81d'; } /* '' */
+.icon-maintenance:before { content: '\e81e'; } /* '' */
+.icon-labor-tracking:before { content: '\e81f'; } /* '' */
+.icon-manpower:before { content: '\e820'; } /* '' */
+.icon-new-hire:before { content: '\e821'; } /* '' */
+.icon-meetings:before { content: '\e822'; } /* '' */
+.icon-notes:before { content: '\e823'; } /* '' */
+.icon-parts:before { content: '\e824'; } /* '' */
+.icon-paintbrush:before { content: '\e825'; } /* '' */
+.icon-pinpoint:before { content: '\e826'; } /* '' */
+.icon-problems:before { content: '\e827'; } /* '' */
+.icon-projects:before { content: '\e828'; } /* '' */
+.icon-purchase-orders:before { content: '\e829'; } /* '' */
+.icon-queries:before { content: '\e82a'; } /* '' */
+.icon-purchase-requests:before { content: '\e82b'; } /* '' */
+.icon-quotes:before { content: '\e82c'; } /* '' */
+.icon-receiving:before { content: '\e82d'; } /* '' */
+.icon-recruiting:before { content: '\e82e'; } /* '' */
+.icon-refresh:before { content: '\e82f'; } /* '' */
+.icon-report-creator:before { content: '\e830'; } /* '' */
+.icon-roles:before { content: '\e831'; } /* '' */
+.icon-rollerbrush:before { content: '\e832'; } /* '' */
+.icon-safety:before { content: '\e833'; } /* '' */
+.icon-sales-orders:before { content: '\e834'; } /* '' */
+.icon-script-hub:before { content: '\e835'; } /* '' */
+.icon-scheduling:before { content: '\e836'; } /* '' */
+.icon-shipping:before { content: '\e837'; } /* '' */
+.icon-skills-qualifications-daekblue:before { content: '\e838'; } /* '' */
+.icon-suggestion-box:before { content: '\e839'; } /* '' */
+.icon-support-contracts:before { content: '\e83a'; } /* '' */
+.icon-surveys:before { content: '\e83b'; } /* '' */
+.icon-table-builder:before { content: '\e83c'; } /* '' */
+.icon-territories:before { content: '\e83d'; } /* '' */
+.icon-tickets:before { content: '\e83e'; } /* '' */
+.icon-time-off:before { content: '\e83f'; } /* '' */
+.icon-training:before { content: '\e840'; } /* '' */
+.icon-time-tracker:before { content: '\e841'; } /* '' */
+.icon-travel:before { content: '\e842'; } /* '' */
+.icon-work-heat-map:before { content: '\e843'; } /* '' */
+.icon-work-orders:before { content: '\e844'; } /* '' */
+.icon-back:before { content: '\e845'; } /* '' */
+.icon-form:before { content: '\e846'; } /* '' */
