@@ -1,10 +1,4 @@
-:root {
-  --aw-font-size: 7rem;
-}
 
-.demo-icon {
-  font-size: var(--aw-font-size);
-}
 
 @font-face {
   font-family: 'appward';
@@ -23,26 +17,18 @@
   font-style: normal;
   font-weight: normal;
   speak: never;
-
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */
-
   /* For safety - reset parent styles, that can break glyph codes. */
   font-variant: normal;
   text-transform: none;
-
   /* fix buttons height, for twitter bootstrap. */
   line-height: 1em;
-
-
-
   /* you can be more comfortable with increased icons size */
   font-size: 120%;
-
   /* Font smoothing. That was taken from TWBS. */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,8 +44,7 @@
   background-color:red;
 }
 
-
-.aw-actions:before { content: '\e800'; } /* '' */
+.aw-actions:before { content: '\e800'; } 
 .aw-actions-bg:before {
   content: '\e800';
   position: relative;
@@ -69,36 +54,12 @@
   position: relative;
   } /* '' */
 
-/*
-.product-square:before {
-  	z-index: -1;
-  	position: relative;
-  	content: "";
-  	display: block;
-  	width: calc(var(--aw-font-size) - 0.3rem);
-  	height: calc(var(--aw-font-size) - 0.3rem);
-    top: calc(var(--aw-font-size) - 1rem);
-  	left: calc(var(--aw-font-size) + 1rem);
-    margin-left:calc(var(--aw-font-size) - 5rem);
-  	border-radius: calc(var(--aw-font-size) - 2rem);
-   	background-color: #222;
-    scale: 3;
-	  transform: rotate(-20deg);
-}
-*/
-
-.product-square:before {
-    content: "";
-    z-index: -1;
-    position: relative;
-    content: "";
-    display: block;
-    width: calc(var(--aw-font-size) - 0.3rem);
-    height: calc(var(--aw-font-size) - 0.3rem);
-    top: calc(var(--aw-font-size) - 1rem);
-    left: calc(var(--aw-font-size) + 1rem);
-    margin-left:calc(var(--aw-font-size) - 5rem);
-    border-radius: calc(var(--aw-font-size) - 2rem);
+.aw-actions-bg-2 {
+  background-image: url('../boards-db_back_4.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
 }
 
 .bg-before-black:before {
