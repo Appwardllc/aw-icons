@@ -1,4 +1,15 @@
-
+:root {
+  --aw-productivity: #DB2828;
+  --aw-crm: #F3701D;
+  --aw-people: #FCBD08;
+  --aw-operations: #00B5AD;
+  --aw-quality: #AD1771;
+  --aw-manufacturing: #2185D0;
+  --aw-supplychain: #7C81DD;
+  --aw-development: #669901;
+  --aw-white: #ffffff;
+  --aw-black: #000000;
+}
 
 @font-face {
   font-family: 'appward';
