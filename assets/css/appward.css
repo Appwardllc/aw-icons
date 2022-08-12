@@ -84,12 +84,71 @@
   } /* '' */
 
 .aw-bg-default {
-  background-image: url('../images/bg2-default.svg');
+  background-image: url('../images/iconbg-default.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-clip: border-box;
   background-position: 5%;
 }
+
+.aw-bg-crm {
+  background-image: url('../images/iconbg-crm.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+.aw-bg-development {
+  background-image: url('../images/iconbg-development.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+.aw-bg-manufacturing {
+  background-image: url('../images/iconbg-manufacturing.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+.aw-bg-people {
+  background-image: url('../images/iconbg-people.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+.aw-bg-operations {
+  background-image: url('../images/iconbg-operations.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+.aw-bg-productivity {
+  background-image: url('../images/iconbg-productivity.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+.aw-bg-quality {
+  background-image: url('../images/iconbg-quality.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+
+.aw-bg-supplychain {
+  background-image: url('../images/iconbg-supplychain.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+  background-position: 5%;
+}
+
 
 .bg-before-black:before {
   background-color: #000;
