@@ -985,6 +985,70 @@
             </div>
 
 
+<style>
+  .app-square {
+    display:inline-block;
+  	position: relative;
+	  border-top-left-radius: 20px;
+	  border-top-right-radius: 20px;
+   	border-bottom-right-radius: 20px;
+  	background-color: #00B5AD;
+    font-size:0;
+    height: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+     transform: translateY(-5px);
+}
+.app-square:before {
+  	z-index: -1;
+  	position: absolute;
+  	content: "";
+  	display:inline-block;
+  	width: 100%;
+  	height: 100%;
+    margin-left:-0.5rem;
+  	top: -0.8rem;
+  	left: -0.8rem;
+  	border-radius: 20px;
+   	background-color: #222;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+	transform: rotate(-20deg);
+}
+
+.stack {
+  position: relative;
+}
+
+.app-square-2 {
+  position: absolute;
+  display: inline-block;
+  transform-origin: 3.125rem 3.125rem;
+  width: 100%;
+  height: 100%;
+  top: 0;
+   left: 0;
+}
+.app-square-2:before  {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  display:block;
+  width: 5em;
+  height: 5em;
+  left: -1em;
+  border-radius: 1.25rem;
+  background-color: #222;
+  transform-origin: 3.125rem 3.125rem;
+  transform: rotate(-20deg);
+}
+
+
+</style>
+<div class="stack">
+  <div class="app-square-2"><i class="aw-actions-bg bg-productivity"></i></div>
+</div>
+
+
+
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
             <script>
@@ -992,7 +1056,7 @@
                 jQuery('input').on('change', function() {
                   var v = jQuery(this).val();
                   jQuery('[class^="aw-"]').css('font-size', v + 'rem')
-                  $('.sider-value').html(v + 'rem');
+                  jQuery('.sider-value').html(v + 'rem');
                 });
               });
 </script>
