@@ -1045,49 +1045,76 @@
                   </div>
                 </div>
             </div>
+
             </div>
 
 
 
 <style>
 
-.stack {
-  display: inline-block;
-  height: 2em;
-  line-height: 2em;
-  position: relative;
+
+.bg-app-black {
+  position: relative !important;
+
 }
 
-.app-square-2 {
-  position: absolute;
-  display: inline-block;
-  transform-origin: 3.125rem 3.125rem;
-  width: 100%;
-  height: 100%;
-  top: 0;
-   left: 0;
-   vertical-align: middle;
-}
-.app-square-2:before  {
-  z-index: -1;
+.bg-app-black:before  {
   position: absolute;
   content: "";
   display:block;
-  width: 5rem;
-  height: 5rem;
-  left: -1rem;
+  width: calc(5rem * 2);
+  height: calc(5rem * 1);
   border-radius: 1.25rem;
   background-color: #222;
-  transform-origin: 3.125rem 3.125rem;
+  display:inline-block;
+  background: -0.1rem -0.1rem 0 1.5rem #000;
   transform: rotate(-20deg);
 }
 
+.aw-stack {
+  position: relative;
+}
+.aw-stacked {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  position: absolute;
+}
 
+#div-1 {
+  background-color: #213343;
+}
+
+#div-2 {
+  z-index: -1;
+  transform: translate(-50px, -50px) scale(0.4) rotate(-20deg);
+  background-color: #FF5C35;
+  opacity: 0.8;
+}
 </style>
-<div class="stack">
-  <div class="app-square-2"><i class="aw-actions-app bg-development-app"></i></div>
+<div class="row">
+
+  <div class="col">
+    <div class="card card-icon mx-1 my-1 shadow border-0">
+      <div class="card-body text-center">
+        <div class="bg-app-black"><i class="aw-actions-app bg-development-app"></i></div>
+        <br />
+        <span class="text-muted">bg-app-black + aw-actions-app bg-development-ap</span>
+      </div>
+    </div>
+  </div>
+
+
+
 </div>
 
+
+
+
+<div class="aw-stack">
+  <div class="aw-stacked" id="div-2"></div>
+  <i class="aw-actions-app bg-development-app"></i>
+</div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
