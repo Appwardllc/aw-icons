@@ -392,16 +392,6 @@
                 <div class="col">
                   <div class="card card-icon mx-1 my-1 shadow border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="card-body text-center">
-                      <i class="aw-brush"></i>
-                      <br />
-                      <span class="text-muted">brush</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card card-icon mx-1 my-1 shadow border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <div class="card-body text-center">
                       <i class="aw-calendar"></i>
                       <br />
                       <span class="text-muted">calendar</span>
@@ -685,16 +675,6 @@
               <div class="col">
                 <div class="card card-icon mx-1 my-1 shadow border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <div class="card-body text-center">
-                    <i class="aw-paintbrush"></i>
-                    <br />
-                    <span class="text-muted">paintbrush</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col">
-                <div class="card card-icon mx-1 my-1 shadow border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="card-body text-center">
                     <i class="aw-pinpoint"></i>
                     <br />
                     <span class="text-muted">pinpoint</span>
@@ -782,15 +762,6 @@
                 </div>
               </div>
 
-              <div class="col">
-                <div class="card card-icon mx-1 my-1 shadow border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <div class="card-body text-center">
-                    <i class="aw-refresh"></i>
-                    <br />
-                    <span class="text-muted">refresh</span>
-                  </div>
-                </div>
-              </div>
 
               <div class="col">
                 <div class="card card-icon mx-1 my-1 shadow border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -1053,6 +1024,9 @@
 }
 
 .stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
   position: relative;
 }
 
@@ -1064,29 +1038,22 @@
   height: 100%;
   top: 0;
    left: 0;
+   vertical-align: middle;
 }
 .app-square-2:before  {
   z-index: -1;
   position: absolute;
   content: "";
   display:block;
-  width: 5em;
-  height: 5em;
-  left: -1em;
+  width: 5rem;
+  height: 5rem;
+  left: -1rem;
   border-radius: 1.25rem;
   background-color: #222;
   transform-origin: 3.125rem 3.125rem;
   transform: rotate(-20deg);
 }
 
-.#{$fa-css-prefix}-stack {
-  display: inline-block;
-  height: 2em;
-  line-height: 2em;
-  position: relative;
-  vertical-align: middle;
-  width: fa-divide(20em, 16) * 2;
-}
 
 </style>
 <div class="stack">

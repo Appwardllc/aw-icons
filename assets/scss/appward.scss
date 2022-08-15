@@ -72,19 +72,6 @@ $product-categories: (
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-
-.aw-actions:before { content: '\e800'; }
-.aw-actions-bg:before {
-  content: '\e800';
-  position: relative;
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
-  border-bottom-right-radius: 1.25rem;
-  position: relative;
-  }
-
 .aw-bg-default {
   background-image: url('../images/iconbg-default.svg');
   background-repeat: no-repeat;
@@ -93,215 +80,90 @@ $product-categories: (
   background-position: 5%;
 }
 
+$apps: (
+  "actions": "\e800",
+  "announcements": "\e801",
+  "app-creator": "\e802",
+  "appointments": "\e803",
+  "articles": "\e804",
+  "assets": "\e805",
+  "audits": "\e806",
+  "boards": "\e807",
+  "calendar": "\e809",
+  "calls": "\e80a",
+  "changes": "\e80b",
+  "chat":"\e80c",
+  "checklist-creator":"\e80d",
+  "companies":"\e80e",
+  "contacts":"\e80f",
+  "database-manager":"\e810",
+  "deals":"\e811",
+  "discussions":"\e812",
+  "documents":"\e813",
+  "drawings":"\e814",
+  "employees":"\e815",
+  "expense-reports":"\e816",
+  "faq":"\e817",
+  "goals":"\e818",
+  "insights":"\e819",
+  "inspections":"\e81a",
+  "installations":"\e81b",
+  "inventory":"\e81c",
+  "mail":"\e81d",
+  "maintenance":"\e81e",
+  "labor-tracking":"\e81f",
+  "manpower":"\e820",
+  "new-hire":"\e821",
+  "meetings":"\e822",
+  "notes":"\e823",
+  "parts":"\e824",
+  "paintbrush":"\e825",
+  "pinpoint":"\e826",
+  "problems":"\e827",
+  "projects":"\e828",
+  "purchase-orders":"\e829",
+  "queries":"\e82a",
+  "purchase-requests":"\e82b",
+  "quotes":"\e82c",
+  "receiving":"\e82d",
+  "recruiting":"\e82e",
+  "refresh":"\e82f",
+  "report-creator":"\e830",
+  "roles":"\e831",
+  "rollerbrush" :"\e832",
+  "safety" :"\e833",
+  "sales-orders" :"\e834",
+  "script-hub" :"\e835",
+  "scheduling" :"\e836",
+  "shipping" :"\e837",
+  "skills-qualifications" :"\e838",
+  "suggestion-box" :"\e839",
+  "support-contracts" :"\e83a",
+  "surveys" :"\e83b",
+  "table-builder" :"\e83c",
+  "territories" :"\e83d",
+  "tickets" :"\e83e",
+  "time-off" :"\e83f",
+  "training" :"\e840",
+  "time-tracker" :"\e841",
+  "travel" :"\e842",
+  "work-heat-map" :"\e843",
+  "work-orders" :"\e844"
+);
+
+@each $app_name, $app_code in $apps {
+
+  .aw-#{$app_name}:before {
+    content: $app_code;
+  }
+  .aw-#{$app_name}-bg:before {
+    content: $app_code;
+    position: relative;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    position: relative;
+    }
 
 
-.aw-announcements:before {
-     content: '\e801';
 }
- .aw-app-creator:before {
-     content: '\e802';
-}
- .aw-appointments:before {
-     content: '\e803';
-}
- .aw-articles:before {
-     content: '\e804';
-}
- .aw-assets:before {
-     content: '\e805';
-}
- .aw-audits:before {
-     content: '\e806';
-}
- .aw-boards:before {
-     content: '\e807';
-}
- .aw-brush:before {
-     content: '\e808';
-}
- .aw-calendar:before {
-     content: '\e809';
-}
- .aw-calls:before {
-     content: '\e80a';
-}
- .aw-changes:before {
-     content: '\e80b';
-}
- .aw-chat:before {
-     content: '\e80c';
-}
- .aw-checklist-creator:before {
-     content: '\e80d';
-}
- .aw-companies:before {
-     content: '\e80e';
-}
- .aw-contacts:before {
-     content: '\e80f';
-}
- .aw-database-manager:before {
-     content: '\e810';
-}
- .aw-deals:before {
-     content: '\e811';
-}
- .aw-discussions:before {
-     content: '\e812';
-}
- .aw-documents:before {
-     content: '\e813';
-}
- .aw-drawings:before {
-     content: '\e814';
-}
- .aw-employees:before {
-     content: '\e815';
-}
- .aw-expense-reports:before {
-     content: '\e816';
-}
- .aw-faq:before {
-     content: '\e817';
-}
- .aw-goals:before {
-     content: '\e818';
-}
- .aw-insights:before {
-     content: '\e819';
-}
- .aw-inspections:before {
-     content: '\e81a';
-}
- .aw-installations:before {
-     content: '\e81b';
-}
- .aw-inventory:before {
-     content: '\e81c';
-}
- .aw-mail:before {
-     content: '\e81d';
-}
- .aw-maintenance:before {
-     content: '\e81e';
-}
- .aw-labor-tracking:before {
-     content: '\e81f';
-}
- .aw-manpower:before {
-     content: '\e820';
-}
- .aw-new-hire:before {
-     content: '\e821';
-}
- .aw-meetings:before {
-     content: '\e822';
-}
- .aw-notes:before {
-     content: '\e823';
-}
- .aw-parts:before {
-     content: '\e824';
-}
- .aw-paintbrush:before {
-     content: '\e825';
-}
- .aw-pinpoint:before {
-     content: '\e826';
-}
- .aw-problems:before {
-     content: '\e827';
-}
- .aw-projects:before {
-     content: '\e828';
-}
- .aw-purchase-orders:before {
-     content: '\e829';
-}
- .aw-queries:before {
-     content: '\e82a';
-}
- .aw-purchase-requests:before {
-     content: '\e82b';
-}
- .aw-quotes:before {
-     content: '\e82c';
-}
- .aw-receiving:before {
-     content: '\e82d';
-}
- .aw-recruiting:before {
-     content: '\e82e';
-}
- .aw-refresh:before {
-     content: '\e82f';
-}
- .aw-report-creator:before {
-     content: '\e830';
-}
- .aw-roles:before {
-     content: '\e831';
-   }
-     .aw-rollerbrush:before {
-         content: '\e832';
-    }
-     .aw-safety:before {
-         content: '\e833';
-    }
-     .aw-sales-orders:before {
-         content: '\e834';
-    }
-     .aw-script-hub:before {
-         content: '\e835';
-    }
-     .aw-scheduling:before {
-         content: '\e836';
-    }
-     .aw-shipping:before {
-         content: '\e837';
-    }
-     .aw-skills-qualifications:before {
-         content: '\e838';
-    }
-     .aw-suggestion-box:before {
-         content: '\e839';
-    }
-     .aw-support-contracts:before {
-         content: '\e83a';
-    }
-     .aw-surveys:before {
-         content: '\e83b';
-    }
-     .aw-table-builder:before {
-         content: '\e83c';
-    }
-     .aw-territories:before {
-         content: '\e83d';
-    }
-     .aw-tickets:before {
-         content: '\e83e';
-    }
-     .aw-time-off:before {
-         content: '\e83f';
-    }
-     .aw-training:before {
-         content: '\e840';
-    }
-     .aw-time-tracker:before {
-         content: '\e841';
-    }
-     .aw-travel:before {
-         content: '\e842';
-    }
-     .aw-work-heat-map:before {
-         content: '\e843';
-    }
-     .aw-work-orders:before {
-         content: '\e844';
-    }
-     .aw-back:before {
-         content: '\e845';
-    }
-     .aw-form:before {
-         content: '\e846';
-    }
