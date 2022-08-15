@@ -21,17 +21,42 @@ $product-categories: (
 
 @each $product-category, $color in $product-categories {
 
+  .text-#{$product-category} {
+    color: $color;
+  }
   .bg-#{$product-category} {
       background-color: $color;
   }
-
+  .border-#{$product-category} {
+      border-color: $color;
+  }
+  .border-top-#{$product-category} {
+      border-top-color: $color;
+  }
+  .border-bottom-#{$product-category} {
+      border-bottom-color: $color;
+  }
+  .border-left-#{$product-category} {
+      border-left-color: $color;
+  }
+  .border-right-#{$product-category} {
+      border-right-color: $color;
+  }
+  .column-rule-#{$product-category} {
+    column-rule-color: $color;
+  }
+  .outline-color-#{$product-category} {
+    outline-color: $color;
+  }
+  .text-shadow-#{$product-category} {
+    text-shadow: $color	0.0625rem 0 0.625rem;
+  }
+  .shadow-#{$product-category} {
+    box-shadow: 1px 2px 8px $color;
+  }
 
   .bg-#{$product-category}-app:before {
       background-color: $color;
-  }
-
-  .text-#{$product-category} {
-    color: $color;
   }
 
   .aw-bg-#{$product-category} {
