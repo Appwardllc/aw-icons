@@ -88,7 +88,7 @@ $apps: (
   "articles": "\e804",
   "assets": "\e805",
   "audits": "\e806",
-  "boards": "\e807",
+  "boards": "\e84c",
   "calendar": "\e809",
   "calls": "\e80a",
   "changes": "\e80b",
@@ -146,7 +146,8 @@ $apps: (
   "time-tracker" :"\e841",
   "travel" :"\e842",
   "work-heat-map" :"\e843",
-  "work-orders" :"\e844"
+  "work-orders" :"\e844",
+  "appward": "\e850"
 );
 
 @each $app_name, $app_code in $apps {
