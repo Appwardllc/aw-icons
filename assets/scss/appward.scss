@@ -21,7 +21,12 @@ $product-categories: (
 
 @each $product-category, $color in $product-categories {
 
-  .bg-#{$product-category}:before {
+  .bg-#{$product-category} {
+      background-color: $color;
+  }
+
+
+  .bg-#{$product-category}-card:before {
       background-color: $color;
   }
 
