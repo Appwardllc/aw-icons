@@ -1,3 +1,12 @@
+
+@import '_mixins';
+
+
+:root {
+  --aw-white: #ffffff;
+  --aw-black: #000000;
+}
+
 $product-categories: (
   "people": #FCBD09,
   "crm": #F3701D,
@@ -16,6 +25,10 @@ $product-categories: (
       background-color: $color;
   }
 
+  .text-#{$product-category} {
+    color: $color;
+  }
+
   .aw-bg-#{$product-category} {
     background-image: url('../images/iconbg-#{$product-category}.svg');
     background-repeat: no-repeat;
@@ -25,11 +38,6 @@ $product-categories: (
   }
 
 
-}
-
-:root {
-  --aw-white: #ffffff;
-  --aw-black: #000000;
 }
 
 
