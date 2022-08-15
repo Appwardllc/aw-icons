@@ -26,7 +26,7 @@ $product-categories: (
   }
 
 
-  .bg-#{$product-category}-card:before {
+  .bg-#{$product-category}-app:before {
       background-color: $color;
   }
 
@@ -160,7 +160,7 @@ $apps: (
   .aw-#{$app_name}:before {
     content: $app_code;
   }
-  .aw-#{$app_name}-bg:before {
+  .aw-#{$app_name}-app:before {
     content: $app_code;
     position: relative;
     border-top-left-radius: 1.25rem;
