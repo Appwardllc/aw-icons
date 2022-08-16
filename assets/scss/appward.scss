@@ -1,6 +1,19 @@
 
-@import '_mixins';
 
+$neutral-gray: #F0F5F7;
+$dark-teal: #123543;
+$gray-green: #4B6D5E;
+$pale-green: #CDF29D;
+$bright-green: #AFE306;
+$seafoam: #BBEDD7;
+$aqua: #04D8E5;
+$blue: #66ADFF;
+$violet: #7976FF;
+$purple: #AA67FF;
+$red: #FF495F;
+$orange: #FF8A55;
+$yellow: #FFCB11;
+$green: #30C150;
 
 :root {
   --aw-white: #ffffff;
@@ -8,6 +21,7 @@
 }
 
 $product-categories: (
+  "default": #BAE148,
   "people": #FCBD09,
   "crm": #F3701D,
   "manufacturing": #2185D0,
@@ -23,9 +37,6 @@ $product-categories: (
 
   .text-#{$product-category} {
     color: $color;
-  }
-  .bg-#{$product-category} {
-      background-color: $color;
   }
   .border-#{$product-category} {
       border-color: $color;
@@ -55,16 +66,14 @@ $product-categories: (
     box-shadow: 1px 2px 8px $color;
   }
 
+  .bg-#{$product-category} {
+      background-color: $color;
+  }
   .bg-#{$product-category}-app:before {
       background-color: $color;
   }
-
-  .aw-bg-#{$product-category} {
-    background-image: url('../images/iconbg-#{$product-category}.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-clip: border-box;
-    background-position: 5%;
+  .aw-bg-#{$product-category}-duo:before {
+    background-color: $color;
   }
 
 
@@ -100,14 +109,6 @@ $product-categories: (
   speak: never;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.aw-bg-default {
-  background-image: url('../images/iconbg-default.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-clip: border-box;
-  background-position: 5%;
 }
 
 $apps: (
@@ -194,4 +195,41 @@ $apps: (
     position: relative;
   }
 
+  .aw-#{$app_name}-duo {
+    position: relative;
+    display:inline-block;
+    font-size: 3rem;
+  }
+
+  .aw-#{$app_name}-duo:before{
+    content: $app_code;
+    position: relative; z-index:1;
+    display: inline-flex;
+    font-size: .8em;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: .3125em .3125em .3125em 0;
+    margin: .33em 0 0 .33em;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aw-#{$app_name}-duo:after {
+    content: "";
+    position: absolute;
+    bottom: 0.1em;
+    right: 0;
+    width: 0.9em;
+    height: 1.1em;
+    background-color: #1C3442;
+    border-radius: .25em;
+    transform: rotateZ(-20deg);
+    transform-origin: 0 100%;
+  }
+
+}
+
+.bg-duo-dark:after {
+  background-color: #fff;
 }
