@@ -1,0 +1,235 @@
+
+
+$neutral-gray: #F0F5F7;
+$dark-teal: #123543;
+$gray-green: #4B6D5E;
+$pale-green: #CDF29D;
+$bright-green: #AFE306;
+$seafoam: #BBEDD7;
+$aqua: #04D8E5;
+$blue: #66ADFF;
+$violet: #7976FF;
+$purple: #AA67FF;
+$red: #FF495F;
+$orange: #FF8A55;
+$yellow: #FFCB11;
+$green: #30C150;
+
+:root {
+  --aw-white: #ffffff;
+  --aw-black: #000000;
+}
+
+$product-categories: (
+  "default": #BAE148,
+  "people": #FCBD09,
+  "crm": #F3701D,
+  "manufacturing": #2185D0,
+  "operations": #00B5AD,
+  "productivity": #DB2828,
+  "quality": #AD1771,
+  "supplychain": #7B81DD,
+  "development": #669901,
+);
+
+
+@each $product-category, $color in $product-categories {
+
+  .text-#{$product-category} {
+    color: $color;
+  }
+  .border-#{$product-category} {
+      border-color: $color;
+  }
+  .border-top-#{$product-category} {
+      border-top-color: $color;
+  }
+  .border-bottom-#{$product-category} {
+      border-bottom-color: $color;
+  }
+  .border-left-#{$product-category} {
+      border-left-color: $color;
+  }
+  .border-right-#{$product-category} {
+      border-right-color: $color;
+  }
+  .column-rule-#{$product-category} {
+    column-rule-color: $color;
+  }
+  .outline-color-#{$product-category} {
+    outline-color: $color;
+  }
+  .text-shadow-#{$product-category} {
+    text-shadow: $color	0.0625rem 0 0.625rem;
+  }
+  .shadow-#{$product-category} {
+    box-shadow: 1px 2px 8px $color;
+  }
+
+  .bg-#{$product-category} {
+      background-color: $color;
+  }
+  .bg-#{$product-category}-app:before {
+      background-color: $color;
+  }
+  .aw-bg-#{$product-category}-duo:before {
+    background-color: $color;
+  }
+
+
+}
+
+
+
+.text-white {
+  color: var(--aw-white);
+}
+
+.text-black {
+  color: var(--aw-black);
+}
+
+
+@font-face {
+  font-family: 'appward';
+  src: url('../fonts/appward.eot?36492724');
+  src: url('../fonts/appward.eot?36492724#iefix') format('embedded-opentype'),
+       url('../fonts/appward.woff2?36492724') format('woff2'),
+       url('../fonts/appward.woff?36492724') format('woff'),
+       url('../fonts/appward.ttf?36492724') format('truetype'),
+       url('../fonts/appward.svg?36492724#appward') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="aw-"]:before, [class*=" aw-"]:before {
+  font-family: "appward";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+$apps: (
+  "actions": "\e800",
+  "announcements": "\e801",
+  "app-creator": "\e802",
+  "appointments": "\e803",
+  "articles": "\e804",
+  "assets": "\e805",
+  "audits": "\e806",
+  "boards": "\e84c",
+  "calendar": "\e809",
+  "calls": "\e80a",
+  "changes": "\e80b",
+  "chat":"\e80c",
+  "checklist-creator":"\e80d",
+  "companies":"\e80e",
+  "contacts":"\e80f",
+  "database-manager":"\e810",
+  "deals":"\e811",
+  "discussions":"\e812",
+  "documents":"\e813",
+  "drawings":"\e814",
+  "employees":"\e815",
+  "expense-reports":"\e816",
+  "faq":"\e817",
+  "goals":"\e818",
+  "insights":"\e819",
+  "inspections":"\e81a",
+  "installations":"\e81b",
+  "inventory":"\e81c",
+  "mail":"\e81d",
+  "maintenance":"\e81e",
+  "labor-tracking":"\e81f",
+  "manpower":"\e820",
+  "new-hire":"\e821",
+  "meetings":"\e822",
+  "notes":"\e823",
+  "parts":"\e824",
+  "pinpoint":"\e826",
+  "problems":"\e827",
+  "projects":"\e828",
+  "purchase-orders":"\e829",
+  "queries":"\e82a",
+  "purchase-requests":"\e82b",
+  "quotes":"\e82c",
+  "receiving":"\e82d",
+  "recruiting":"\e82e",
+  "refresh":"\e82f",
+  "report-creator":"\e830",
+  "roles":"\e831",
+  "safety" :"\e833",
+  "sales-orders" :"\e834",
+  "script-hub" :"\e835",
+  "scheduling" :"\e836",
+  "shipping" :"\e837",
+  "skills-qualifications" :"\e838",
+  "suggestion-box" :"\e839",
+  "support-contracts" :"\e83a",
+  "surveys" :"\e83b",
+  "table-builder" :"\e83c",
+  "territories" :"\e83d",
+  "tickets" :"\e83e",
+  "time-off" :"\e83f",
+  "training" :"\e840",
+  "time-tracker" :"\e841",
+  "travel" :"\e842",
+  "work-heat-map" :"\e843",
+  "work-orders" :"\e844",
+  "appward": "\e850"
+);
+
+@each $app_name, $app_code in $apps {
+
+  .aw-#{$app_name}:before {
+    content: $app_code;
+  }
+  .aw-#{$app_name}-app:before {
+    content: $app_code;
+    position: relative;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    position: relative;
+  }
+
+  .aw-#{$app_name}-duo {
+    position: relative;
+    display:inline-block;
+    font-size: 3rem;
+  }
+
+  .aw-#{$app_name}-duo:before{
+    content: $app_code;
+    position: relative; z-index:1;
+    display: inline-flex;
+    font-size: .8em;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: .3125em .3125em .3125em 0;
+    margin: .33em 0 0 .33em;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aw-#{$app_name}-duo:after {
+    content: "";
+    position: absolute;
+    bottom: 0.1em;
+    right: 0;
+    width: 0.9em;
+    height: 1.1em;
+    background-color: #1C3442;
+    border-radius: .25em;
+    transform: rotateZ(-20deg);
+    transform-origin: 0 100%;
+  }
+
+}
+
+.bg-duo-dark:after {
+  background-color: #fff;
+}
